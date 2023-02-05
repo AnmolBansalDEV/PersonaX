@@ -1,0 +1,56 @@
+.promptBar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 4rem;
+}
+
+.promptBar--form{
+    padding: 10px;
+    background: rgba(10, 10, 10, 0.25);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    border: 1px solid rgba(248, 250, 252, 0.2);
+}
+.promptBar--form > input{
+    border: none;
+    outline: none;
+    width: 40rem;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    text-indent: 20px;
+}
+
+.promptBar--form__vr{
+    height: 40px;
+    opacity: 0.3;
+    border-left: 1px solid #BDBDBD;
+}
+.promptBar--form__personabtn{
+    display: flex;
+    margin-left: 16px;
+    align-items: center;
+    padding: 8px 12px;
+    gap: 12px;
+    background: rgba(16, 16, 218, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.16);
+    border-radius: 6px;
+}
+.promptBar--form__askbtn{
+    background-color: #8451EC;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px;
+    gap: 8px;
+    margin-left: 16px;
+    border-radius: 6px;
+}
+.promptBar--form__arrowicon{
+    background-color: #8451EC;
+}
