@@ -1,56 +1,61 @@
 .promptBar{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-top: 4rem;
+    margin-top: 70px;
 }
 
 .promptBar--form{
-    padding: 10px;
-    background: rgba(10, 10, 10, 0.25);
-    border-radius: 10px;
     display: flex;
     align-items: center;
-    border: 1px solid rgba(248, 250, 252, 0.2);
+    justify-content: center;
 }
-.promptBar--form > input{
-    border: none;
+
+.promptBar--form__personabtn{
+    background: #0E0E20;
+    border: 1px solid rgba(255, 255, 255, 0.16);
+    border-radius: 6px 0px 0px 0px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 12px;
+    gap: 8px;
     outline: none;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #F1F5F9;
+    cursor: pointer;
+}
+
+.promptBar--form > input {
+    padding: 12px 10px 12px 0px;
+    outline: none;
+    gap: 10px;
     width: 40rem;
+    background: #090916;
+    border: 1px solid rgba(255, 255, 255, 0.16);
+    border-radius: 0px 6px 0px 0px;
     font-family: 'Manrope';
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
     line-height: 24px;
-    text-indent: 20px;
+    letter-spacing: 0.2px;
+    color: #F3EEFD;
+    text-indent: 16px;
 }
 
-.promptBar--form__vr{
-    height: 40px;
-    opacity: 0.3;
-    border-left: 1px solid #BDBDBD;
+.promptBar--form > input:focus {
+    border-color:rgba(255, 255, 255, 0.75);
 }
-.promptBar--form__personabtn{
-    display: flex;
-    margin-left: 16px;
-    align-items: center;
-    padding: 8px 12px;
-    gap: 12px;
-    background: rgba(16, 16, 218, 0.04);
-    border: 1px solid rgba(255, 255, 255, 0.16);
-    border-radius: 6px;
-}
+
 .promptBar--form__askbtn{
-    background-color: #8451EC;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 12px;
-    gap: 8px;
-    margin-left: 16px;
+    background: #585BC0;
     border-radius: 6px;
+    padding: 16px;
+    margin-left: 12px;
+    cursor: pointer;
 }
 .promptBar--form__arrowicon{
-    background-color: #8451EC;
+    background: #585BC0;
 }

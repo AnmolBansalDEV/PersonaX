@@ -3,4 +3,39 @@
   background-color: #050518;
   color: #F9F6FE;
 }
+.app{
+  padding-bottom: 80px;
+}
+.mainSection{
+  padding: 0 5rem;
+}
 
+.response-section{
+  display: flex;
+  flex-direction: column;
+}
+.retry-btn{
+  align-self: center;
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #F3EEFD;
+  cursor: pointer;
+  margin-top: 33px;
+}
+
+.retry-btn:hover{
+  text-decoration: underline;
+}
+
+::-moz-selection { /*Code for Firefox */
+  color: #ffff;
+  background: #5D5FEF;
+}
+
+::selection {
+  color: #ffff;
+  background: #5D5FEF;
+}
