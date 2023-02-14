@@ -28,7 +28,7 @@ function PromptBar() {
         {
           open && 
           <div className='response-section'>
-            <Accordion />
+            <Accordion inputRef={inputRef}/>
             <p className='retry-btn'>Retry</p>
           </div>
         }

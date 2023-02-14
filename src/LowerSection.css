@@ -1,6 +1,6 @@
 .lowersection{
     margin-top: 6rem;
     display: flex;
-    align-self: center;
-    justify-content: space-between;
+    align-items: flex-start;
+    justify-content: center;
 }

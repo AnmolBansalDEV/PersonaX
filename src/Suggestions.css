@@ -1,10 +1,11 @@
 .suggestions > h3{
-    font-family: 'Manrope',;
+    font-family: 'Manrope', sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
     line-height: 48px;
     color: rgba(238, 238, 251, 0.6);
+    margin-bottom: 0.5rem;
 }
 .questions-grid{
     display: grid;

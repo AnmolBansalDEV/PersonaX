@@ -3,7 +3,7 @@ import { CopyToClipboard } from "react-copy-to-clipboard";
 import copy from "./assets/copy.svg"
 import "./Accordion.css"
 
-function Accordion() {
+function Accordion({inputRef}) {
     const txt = `Here are some of my major pain points, listed below
     1. Lack of knowledge and understanding of financial markets and investment instruments.
     2. Limited investment budget, making it difficult to diversify a portfolio.

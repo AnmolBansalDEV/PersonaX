@@ -1,6 +1,3 @@
-.rightPersona{
-    margin-bottom: 80px;
-}
 .rightPersona--bottom{
     display: flex;
     align-items: center;
@@ -11,7 +8,7 @@
     font-weight: 500;
     font-size: 16px;
     line-height: 48px;
-color: rgba(238, 238, 251, 0.6);
+    color: rgba(238, 238, 251, 0.6);
 }
 .rightPersona > h3 > span{
     font-family: 'Marko One', sans-serif;
@@ -87,8 +84,9 @@ color: rgba(238, 238, 251, 0.6);
     cursor: pointer;
 }
 .rightPersona--vr{
-    height: 8rem;
+    height: 9rem;
     opacity: 0.2;
     margin-left: 48px;
+    margin-right: 48px;
     border-left: 1px solid #E0E0E0;
 }
