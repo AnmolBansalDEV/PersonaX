@@ -2,6 +2,7 @@
   margin: 0;
   background-color: #050518;
   color: #F9F6FE;
+  box-sizing: border-box;
 }
 .app{
   padding-bottom: 80px;
@@ -10,25 +11,6 @@
   padding: 0 5rem;
 }
 
-.response-section{
-  display: flex;
-  flex-direction: column;
-}
-.retry-btn{
-  align-self: center;
-  font-family: 'Manrope';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
-  color: #F3EEFD;
-  cursor: pointer;
-  margin-top: 33px;
-}
-
-.retry-btn:hover{
-  text-decoration: underline;
-}
 
 ::-moz-selection { /*Code for Firefox */
   color: #ffff;

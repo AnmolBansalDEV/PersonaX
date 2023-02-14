@@ -59,3 +59,24 @@
 .promptBar--form__arrowicon{
     background: #585BC0;
 }
+
+
+.response-section{
+    display: flex;
+    flex-direction: column;
+  }
+  .retry-btn{
+    align-self: center;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #F3EEFD;
+    cursor: pointer;
+    margin-top: 33px;
+  }
+  
+  .retry-btn:hover{
+    text-decoration: underline;
+  }
