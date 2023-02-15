@@ -54,6 +54,8 @@
     border-radius: 6px;
     padding: 16px;
     margin-left: 12px;
+    outline: none;
+    border: none;
     cursor: pointer;
 }
 .promptBar--form__arrowicon{
