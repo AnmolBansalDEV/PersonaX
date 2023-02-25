@@ -6,7 +6,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
 import swap from './assets/swap.svg'
 
-function PromptBar() {
+function PromptBar({setOpenModal}) {
   const [open, setOpen] = useState(false)
   const inputRef = useRef(null)
 
@@ -21,7 +21,7 @@ function PromptBar() {
   return (
     <div className='promptBar'>
         <form className='promptBar--form' onSubmit={askGpt}>
-                <div className='promptBar--form__personabtn'>Ayush<img src={swap} alt="swap persona" /></div>
+                <div onClick={()=>setOpenModal(true)} className='promptBar--form__personabtn'>Ayush<img src={swap} alt="swap persona" /></div>
                 <input ref={inputRef} placeholder='What is your biggest pain points as a rookie investor?' />
                 <button className='promptBar--form__askbtn'><FontAwesomeIcon className='promptBar--form__arrowicon' icon={faArrowRight} /></button>
         </form>
@@ -32,7 +32,7 @@ function PromptBar() {
             <p className='retry-btn'>Retry</p>
           </div>
         }
-        {!open&&<LowerSection />}
+        {!open && <LowerSection /> }
     </div>
   )
 }

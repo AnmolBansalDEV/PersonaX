@@ -1,0 +1,17 @@
+.qualitytile{
+    background: #222137;
+    border: 1px solid #585BC0;
+    border-radius: 4px;
+    padding: 4px 6px;
+    width: fit-content;
+}
+.qualitytile > p {
+    font-family: 'Inter';
+    background: #222137;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.4px;
+    color: #EDECEE;
+}
