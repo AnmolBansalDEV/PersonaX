@@ -1,0 +1,165 @@
+.promptBar{
+    margin-top: 70px;
+}
+
+.promptBarForm{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.promptBarFormPersonabtn{
+    background: #0E0E20;
+    border: 1px solid rgba(255, 255, 255, 0.16);
+    border-radius: 6px 0px 0px 6px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 12px;
+    gap: 8px;
+    outline: none;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #F1F5F9;
+    cursor: pointer;
+}
+
+.promptBarForm > input {
+    padding: 12px 10px 12px 0px;
+    outline: none;
+    gap: 10px;
+    width: 40rem;
+    background: #090916;
+    border: 1px solid rgba(255, 255, 255, 0.16);
+    border-radius: 0px 6px 6px 0px;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    color: #F3EEFD;
+    text-indent: 16px;
+}
+
+.promptBarForm > input:focus {
+    border-color:rgba(255, 255, 255, 0.75);
+}
+
+.promptBarFormAskbtn{
+    background: #585BC0;
+    border-radius: 6px;
+    padding: 16px;
+    margin-left: 12px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+.promptBarFormArrowicon{
+    background: #585BC0;
+}
+
+
+.responseSection{
+    display: flex;
+    flex-direction: column;
+  }
+  .retryBtn{
+    align-self: center;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #F3EEFD;
+    cursor: pointer;
+    margin-top: 33px;
+  }
+  
+  .retryBtn:hover{
+    text-decoration: underline;
+  }
+
+  .loader{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .gooey {
+    width: 142px;
+    height: 40px;
+    /* margin: -20px 0 0 -71px; */
+    filter: contrast(20);
+  }
+  .gooey .dot {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: 12px;
+    left: 15px;
+    filter: blur(4px);
+    background: #fff;
+    border-radius: 50%;
+    transform: translateX(0);
+    animation: dot 2.8s infinite;
+  }
+  .gooey .dots {
+    transform: translateX(0);
+    margin-top: 12px;
+    margin-left: 31px;
+    animation: dots 2.8s infinite;
+  }
+  .gooey .dots span {
+    display: block;
+    float: left;
+    width: 16px;
+    height: 16px;
+    margin-left: 16px;
+    filter: blur(4px);
+    background: #fff;
+    border-radius: 50%;
+  }
+  @-moz-keyframes dot {
+    50% {
+      transform: translateX(96px);
+    }
+  }
+  @-webkit-keyframes dot {
+    50% {
+      transform: translateX(96px);
+    }
+  }
+  @-o-keyframes dot {
+    50% {
+      transform: translateX(96px);
+    }
+  }
+  @keyframes dot {
+    50% {
+      transform: translateX(96px);
+    }
+  }
+  @-moz-keyframes dots {
+    50% {
+      transform: translateX(-31px);
+    }
+  }
+  @-webkit-keyframes dots {
+    50% {
+      transform: translateX(-31px);
+    }
+  }
+  @-o-keyframes dots {
+    50% {
+      transform: translateX(-31px);
+    }
+  }
+  @keyframes dots {
+    50% {
+      transform: translateX(-31px);
+    }
+  }
+  

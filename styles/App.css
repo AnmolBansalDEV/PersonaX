@@ -4,6 +4,13 @@
   color: #F9F6FE;
   box-sizing: border-box;
 }
+.app{
+  padding-bottom: 80px;
+}
+.mainSection{
+  padding: 0 5rem;
+}
+
 
 ::-moz-selection { /*Code for Firefox */
   color: #ffff;

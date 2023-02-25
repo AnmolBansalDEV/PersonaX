@@ -1,0 +1,92 @@
+.rightPersonaBottom{
+    display: flex;
+    align-items: center;
+}
+.rightPersona > h3{
+    font-family: 'Manrope', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 48px;
+    color: rgba(238, 238, 251, 0.6);
+}
+.rightPersona > h3 > span{
+    font-family: 'Marko One', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 27px;
+    color: rgba(238, 238, 251, 0.6);
+}
+
+.rightPersonaCard{
+    background: #0F0F24;
+    isolation: isolate;
+    max-width: 16rem;
+    border: 1px solid rgba(248, 250, 252, 0.2);
+    border-radius: 6px;
+    padding: 14px 16px;
+    gap: 24px;
+}
+
+.rightPersonaCardNav{
+    display: flex;
+    background: #0F0F24;
+    align-items: center;
+    justify-content: space-between;
+}
+.rightPersonaCardNav > h3{
+    background: #0F0F24;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 28px;
+    color: #E2E8F0;
+}
+
+.rightPersonaCardNav > span{
+    background: #0F0F24;
+    color: #585BC0;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    cursor: pointer;
+}
+
+.rightPersonaCardNav > span > img{
+    background: #0F0F24;
+}
+.rightPersonaCard > h4{
+    font-family: 'Inter', sans-serif;
+    background: #0F0F24;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    margin: 16px 0;
+    color: rgba(226, 232, 240, 0.8);
+}
+.rightPersonaCard > p{
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    background: #0F0F24;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    text-decoration-line: underline;
+    color: #E2E8F0;
+    cursor: pointer;
+}
+.rightPersonaVr{
+    height: 9rem;
+    opacity: 0.2;
+    margin-left: 48px;
+    margin-right: 48px;
+    border-left: 1px solid #E0E0E0;
+}
