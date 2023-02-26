@@ -1,9 +1,13 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import styles from "@/styles/Question.module.css"
+import InputContext from './InputContext'
 
 function Question(props) {
+
+  const {inputRef} = useContext(InputContext)
+  
   return (
-    <div className={styles.question}>
+    <div onClick={()=> inputRef.current.value = props.q} className={styles.question}>
         <h4>{props.q}</h4>
     </div>
   )

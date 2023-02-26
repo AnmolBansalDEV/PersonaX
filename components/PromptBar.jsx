@@ -6,6 +6,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
 import swap from "@/assets/swap.svg"
 import Image from 'next/image'
+import InputContext from './InputContext'
 import PersonaContext from './PersonaContext'
 import Personas from "@/Personas.json"
 
@@ -49,9 +50,21 @@ console.log("this is the persona of ", personaSelected)
  return (
     <div className={styles.promptBar}>
         <form className={styles.promptBarForm} onSubmit={askGpt}>
-                <div onClick={()=>setOpenModal(true)} className={styles.promptBarFormPersonabtn}>{personaSelected}<Image src={swap} alt="swap persona" /></div>
-                <input ref={inputRef} placeholder='What are your biggest pain points as a rookie investor?' />
-                <button className={styles.promptBarFormAskbtn}><FontAwesomeIcon className={styles.promptBarFormArrowicon} icon={faArrowRight} /></button>
+                <div
+                  onClick={()=>setOpenModal(true)} 
+                  className={styles.promptBarFormPersonabtn}>
+                    {personaSelected}
+                    <Image src={swap} alt="swap persona" />
+                </div>
+                <input
+                 disabled={isGenerating}
+                 ref={inputRef} 
+                 placeholder='What are your biggest pain points as a rookie investor?' />
+                <button
+                  disabled={isGenerating}
+                  className={styles.promptBarFormAskbtn}>
+                    <FontAwesomeIcon className={styles.promptBarFormArrowicon} icon={faArrowRight} />
+                </button>
         </form>
         {isGenerating && <div className={styles.loader}>
         <div className={styles.gooey}>
@@ -67,11 +80,13 @@ console.log("this is the persona of ", personaSelected)
         {
           apiOutput && !isGenerating && 
           <div className={styles.responseSection}>
-            <Accordion  apiOutput={apiOutput} inputRef={inputRef}/>
+            <Accordion  apiOutput={apiOutput} />
             <p onClick={askGpt} className={styles.retryBtn}>Retry</p>
           </div>
         }
-        {!apiOutput && !isGenerating && <LowerSection setOpenModal={setOpenModal} /> }
+        {!apiOutput && !isGenerating && <InputContext.Provider value={{inputRef}}>
+                        <LowerSection setOpenModal={setOpenModal} />
+                      </InputContext.Provider> }
     </div>
   )
 }
