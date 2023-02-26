@@ -8,7 +8,7 @@ config.autoAddCss = false
 
 
 export default function App({ Component, pageProps }) {
-  const [personaSelected, setPersonaSelected] = useState(Personas[1].name)
+  const [personaSelected, setPersonaSelected] = useState(Personas[0].name)
   return (
    <PersonaContext.Provider value={{personaSelected, setPersonaSelected}}>
     <Component {...pageProps} />

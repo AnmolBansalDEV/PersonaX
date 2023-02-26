@@ -58,7 +58,7 @@ console.log("this is the persona of ", personaSelected)
                   onClick={()=>setOpenModal(true)} 
                   className={styles.promptBarFormPersonabtn}>
                     {personaSelected}
-                    <Image src={swap} alt="swap persona" />
+                    <Image className={styles.swapImage} src={swap} alt="swap persona" />
                 </div>
                 <input
                  disabled={isGenerating}
