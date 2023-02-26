@@ -21,21 +21,26 @@ const callGenerateEndpoint = async () => {
   setIsGenerating(true);
   const prompt = Personas.filter(x => x.name === personaSelected)[0].prompt
   console.log("Calling OpenAI...")
-  const response = await fetch('/api/generate', {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json',
-    },
-    body: JSON.stringify({ userInput:`${prompt}${inputRef.current.value}` }),
-  });
-
-  const data = await response.json();
-  console.log("data:", data)
-  const { output } = data;
-  console.log("OpenAI replied...", output.text)
-
-  setApiOutput(`${output.text}`);
-  setIsGenerating(false);
+  try{
+    const response = await fetch('/api/generate', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({ userInput:`${prompt}${inputRef.current.value}` }),
+    });
+  
+    const data = await response.json();
+    console.log("data:", data)
+    const { output } = data;
+    console.log("OpenAI replied...", output.text)
+  
+    setApiOutput(`${output.text}`);
+    setIsGenerating(false);
+  }
+  catch(err){
+    console.log(err)
+  }
 }
 
 
