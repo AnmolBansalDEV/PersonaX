@@ -42,6 +42,10 @@ const callGenerateEndpoint = async () => {
 
   function askGpt(e){
     e.preventDefault();
+    if(inputRef.current.value.length === 0){
+      alert("Please enter your question in the input box.")
+      return;
+    }
     console.log(inputRef.current.value)
     callGenerateEndpoint()
     //make sure that prmpt is not empty edge case

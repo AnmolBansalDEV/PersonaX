@@ -92,6 +92,7 @@
     width: 142px;
     height: 40px;
     filter: contrast(20);
+    /* background-color: #0C0C1D; */
   }
   .gooey .dot {
     position: absolute;
@@ -100,7 +101,7 @@
     top: 12px;
     left: 15px;
     filter: blur(4px);
-    background: #fff;
+    background: #ffff;
     border-radius: 50%;
     transform: translateX(0);
     animation: dot 2.8s infinite;
@@ -118,7 +119,7 @@
     height: 16px;
     margin-left: 16px;
     filter: blur(4px);
-    background: #fff;
+    background: #ffff;
     border-radius: 50%;
   }
   @-moz-keyframes dot {
