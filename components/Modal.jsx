@@ -11,8 +11,6 @@ function Modal({setOpenModal}) {
     const {personaSelected,setPersonaSelected} = useContext(PersonaContext)
     const [personaCurrent, setPersonaCurrent] = useState("Kartik")
     const personaObj = Personas.filter(x => x.name == personaCurrent)[0]
-    console.log(personaObj)
-
     function changeCurrent(name){
         setPersonaCurrent(name)
     }

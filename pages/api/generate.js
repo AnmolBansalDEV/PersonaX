@@ -1,7 +1,6 @@
 import { GoogleGenerativeAI } from "@google/generative-ai";
 
 const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY)
-console.log(process.env.GEMINI_API_KEY)
 const generateAction = async (req, res) => {
   const generationConfig = {
     stopSequences: ["User"],

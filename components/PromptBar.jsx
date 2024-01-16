@@ -31,9 +31,7 @@ function PromptBar({ setOpenModal }) {
       });
 
       const data = await response.json();
-      console.log("data:", data);
       const { output } = data;
-      console.log("OpenAI replied...", output);
 
       setApiOutput(`${output}`);
       setIsGenerating(false);
@@ -48,13 +46,9 @@ function PromptBar({ setOpenModal }) {
       alert("Please enter your question in the input box.");
       return;
     }
-    console.log(inputRef.current.value);
     callGenerateEndpoint()
-      .then(() => console.log("done"))
       .catch((err) => console.log(err));
-    //make sure that prmpt is not empty edge case
   }
-  console.log("this is the persona of ", personaSelected);
   return (
     <div className={styles.promptBar}>
       <form className={styles.promptBarForm} onSubmit={askGpt}>
