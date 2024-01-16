@@ -2,7 +2,7 @@ import React,{useContext} from 'react'
 import styles from "@/styles/RightPersona.module.css"
 import swap from '@/assets/swap-purple.svg'
 import Image from 'next/image'
-import PersonaContext from './PersonaContext'
+import PersonaContext from '../contexts/PersonaContext'
 import Personas from "@/Personas.json"
 function RightPersona({setOpenModal}) {
   const {personaSelected} = useContext(PersonaContext)

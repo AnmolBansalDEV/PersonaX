@@ -1,6 +1,6 @@
 import React, { useContext } from 'react'
 import styles from "@/styles/Question.module.css"
-import InputContext from './InputContext'
+import InputContext from '../contexts/InputContext'
 
 function Question(props) {
 

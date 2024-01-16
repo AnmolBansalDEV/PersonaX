@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import XcardModal from './XcardModal'
 import QualityTile from './QualityTile'
 import Personas from "@/Personas.json"
-import PersonaContext from './PersonaContext'
+import PersonaContext from '../contexts/PersonaContext'
 
 function Modal({setOpenModal}) {
     const {personaSelected,setPersonaSelected} = useContext(PersonaContext)
